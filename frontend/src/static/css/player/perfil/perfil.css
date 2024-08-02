@@ -1,0 +1,82 @@
+.perfil-page-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../../images/pergamino_antiguo.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.perfil-page-container h1 {
+    text-align: center;
+    font-size: 5em;
+}
+
+.hero-div{
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 2rem;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-div h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    font-family: 'Lakki Reddy';
+}
+
+.hero-div h3{
+    text-align: center;
+    font-family: 'Lakki Reddy';
+}
+
+.editar-perfil-button{
+    margin-top: 8px;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Lakki Reddy';
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+    transform: translateY(0);
+    margin-top: 40px;
+    margin-bottom: -40px;
+
+}
+
+.editar-perfil-button:hover {
+    /* Cuando se pasa el cursor sobre el botón, se agrega una sombra */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    /* Cuando se pasa el cursor sobre el botón, se eleva un poco */
+    transform: translateY(-5px);
+}
+
+.input-wrapper input {
+    width: 100%;
+    /* Ajusta esto para cambiar el ancho del input */
+    padding: 10px;
+    /* Añade espacio alrededor del texto en el input */
+    border-radius: 20px;
+    /* Añade bordes redondeados al input */
+    border: 1px solid #ccc;
+    /* Añade un borde al input */
+    font-size: 1.2em;
+    /* Ajusta esto para cambiar el tamaño del texto en el input */
+}

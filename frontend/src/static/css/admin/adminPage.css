@@ -1,0 +1,239 @@
+.admin-page-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../images/pergamino_antiguo.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.hero-div-admin {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 2rem;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.table-container {
+  width: 100%;
+  
+}
+
+.table-container table {
+  width: 100%;
+  background-color: transparent;
+}
+
+
+
+.custom-form-input {
+  position: relative;
+}
+
+.custom-form-input-label {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transition: transform 0.5s, color 0.3s;
+  transform: translateY(-15px) scale(0.7);
+  transform-origin: top left;
+  color: #000000;
+  cursor: pointer;
+}
+
+.custom-form-input-label:after {
+  content: "*";
+  color: #cc0033 !important;
+}
+
+.custom-input,
+.custom-textarea{
+    width: 100% !important;
+    font-family: inherit !important;
+    font-size: 1rem !important;
+    color: var(--color-input) !important;
+    padding: 0.6em 0.3em !important;
+    outline: none !important;
+    background-color: transparent !important;
+    margin: 20px 0;
+}
+
+.custom-input{
+  border: none !important;
+  border-bottom: 1px solid var(--main-button-hover-dark-color) !important;
+}
+
+.custom-input:disabled{
+  background-color: rgb(239, 239, 239) !important;
+}
+
+.custom-textarea{
+  border: 1px solid var(--main-button-hover-dark-color) !important;
+}
+
+.custom-button-row{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pagination-button {
+  margin-top: 8px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Lakki Reddy';
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transform: translateY(0);
+  min-width: 50px;
+  text-align: center; /* Centra el texto horizontalmente */
+  line-height: 50px; /* Centra el texto verticalmente */
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+.pagination-button:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-5px);
+}
+
+.pagination-button-current {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff; /* Cambia el color del texto a blanco */
+  background-color: #6F4E37; /* Cambia el color de fondo a verde */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Lakki Reddy';
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transform: translateY(0);
+  min-width: 50px;
+  text-align: center; /* Centra el texto horizontalmente */
+  line-height: 50px; /* Centra el texto verticalmente */
+  text-decoration: none; /* Elimina el subrayado */
+  
+}
+
+.pagination-button-current:hover,
+.admin-button:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-5px);
+}
+
+.edit-button,
+.delete-button{
+  margin-top: 8px;
+  margin-right: 10px;
+  padding: 0.5rem 1rem; /* Reducir el relleno */
+  font-size: 1rem; /* Reducir el tamaño de la fuente */
+  font-weight: 700;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Lakki Reddy';
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transform: translateY(0);
+}
+
+.delete-button:hover,
+.cancel-button:hover {
+  /* Cuando se pasa el cursor sobre el botón, se agrega una sombra */
+  box-shadow: 0 10px 20px rgba(255, 0, 0, 0.19), 0 6px 6px rgba(211, 8, 8, 0.763);
+  /* Cuando se pasa el cursor sobre el botón, se eleva un poco */
+  transform: translateY(-5px);
+}
+
+.edit-button:hover {
+  /* Cuando se pasa el cursor sobre el botón, se agrega una sombra */
+  box-shadow: 0 10px 20px rgba(105, 75, 236, 0.374), 0 6px 6px rgba(40, 36, 236, 0.763);
+  /* Cuando se pasa el cursor sobre el botón, se eleva un poco */
+  transform: translateY(-5px);
+}
+
+.save-button,
+.cancel-button {
+  margin-top: 8px;
+  margin-right: 10px;
+  padding: 0.75rem 2rem; /* Aumenta el relleno para hacer el botón más grande */
+  font-size: 1.5rem; /* Aumenta el tamaño de la fuente para hacer el texto más grande */
+  font-weight: 700;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Lakki Reddy';
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 600px) {
+  .scrollable-div-admin table {
+    width: 100%;
+  }
+
+  .scrollable-div-admin th {
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    font-size: 20px;
+  }
+}
+
+.save-button:hover {
+  /* Cuando se pasa el cursor sobre el botón, se agrega una sombra */
+  box-shadow: 0 10px 20px rgba(105, 75, 236, 0.374), 0 6px 6px rgba(30, 255, 0, 0.763);
+  /* Cuando se pasa el cursor sobre el botón, se eleva un poco */
+  transform: translateY(-5px);
+}
+
+.admin-button {
+    margin-top: 8px;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Lakki Reddy';
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transform: translateY(0);
+    margin-bottom: 10px;
+}

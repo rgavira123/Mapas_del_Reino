@@ -1,0 +1,54 @@
+.int-confirm-modal-button {
+  margin-top: 8px;
+  padding: 0.5rem 1.5rem; /* Ajustar el padding para reducir el tamaño */
+  font-size: 1.2rem; /* Reducir el tamaño de la fuente */
+  font-weight: 700;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 25px; /* Reducir el border-radius */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Lakki Reddy';
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transform: translateY(0);
+}
+
+.int-confirm-modal-button:hover {
+    /* Cuando se pasa el cursor sobre el botón, se agrega una sombra */
+    box-shadow: 0 10px 20px rgba(105, 75, 236, 0.374), 0 6px 6px rgba(40, 36, 236, 0.763);
+    /* Cuando se pasa el cursor sobre el botón, se eleva un poco */
+    transform: translateY(-5px);
+}
+
+.crit-modal-button {
+  margin-top: 8px;
+  padding: 0.5rem 1.5rem; /* Ajustar el padding para reducir el tamaño */
+  font-size: 1.2rem; /* Reducir el tamaño de la fuente */
+  font-weight: 700;
+  color: #000000;
+  background-color: #e0e0e0; /* Gris clarito */
+  border: none;
+  border-radius: 20px; /* Reducir el border-radius */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Lakki Reddy';
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transform: translateY(0);
+}
+
+.crit-modal-button:hover {
+    /* Cuando se pasa el cursor sobre el botón, se agrega una sombra */
+    box-shadow: 0 10px 20px rgba(45, 45, 46, 0.374), 0 6px 6px rgba(39, 39, 41, 0.763);
+    /* Cuando se pasa el cursor sobre el botón, se eleva un poco */
+    transform: translateY(-5px);
+}
+
+.crit-modal-button-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+  grid-template-rows: repeat(2, auto); /* Dos filas con altura automática */
+  gap: 10px; /* Espacio entre los elementos */
+  justify-content: center; /* Centrar horizontalmente los elementos */
+  align-items: center; /* Centrar verticalmente los elementos */
+}

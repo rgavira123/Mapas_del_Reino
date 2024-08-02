@@ -1,0 +1,30 @@
+.lobby-cancel-modal-button,
+.lobby-confirm-modal-button {
+    margin-top: 8px;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Lakki Reddy';
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transform: translateY(0);
+}
+
+.lobby-confirm-modal-button:hover {
+    /* Cuando se pasa el cursor sobre el botón, se agrega una sombra */
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.19), 0 6px 6px rgba(211, 8, 8, 0.763);
+    /* Cuando se pasa el cursor sobre el botón, se eleva un poco */
+    transform: translateY(-5px);
+}
+
+.lobby-cancel-modal-button:hover {
+    /* Cuando se pasa el cursor sobre el botón, se agrega una sombra */
+    box-shadow: 0 10px 20px rgba(105, 75, 236, 0.374), 0 6px 6px rgba(40, 36, 236, 0.763);
+    /* Cuando se pasa el cursor sobre el botón, se eleva un poco */
+    transform: translateY(-5px);
+}

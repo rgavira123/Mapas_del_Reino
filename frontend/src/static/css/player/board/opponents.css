@@ -1,0 +1,133 @@
+
+.opp-boards-container {
+  position: relative;
+}
+
+.opp-board-icon {
+  display: inline-block;
+  height: 24px;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 24px;
+  font-size: 16px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  border: 1px solid #000000;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.opp-board-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: auto; /* Añadir overflow auto para manejar contenido grande */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../../images/pergamino_antiguo.jpg');
+  border: 1px solid #000000;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+svg {
+}
+
+/*
+Russian blue pattern:
+#7be3f6
+#4499a9
+#276a76
+#133b43
+#03090a
+*/
+svg g {
+  fill: #4499a9;
+  fill-opacity: 0.6;
+}
+
+svg g:hover {
+  fill: Red;
+  fill-opacity: 0.7;
+}
+
+svg g:hover text {
+  fill-opacity: 1;
+}
+
+svg g.q .hexagon {
+  fill: Red;
+  fill-opacity: 0.4;
+}
+
+svg g.r .hexagon {
+  fill: Green;
+  fill-opacity: 0.4;
+}
+
+svg g.s .hexagon {
+  fill: rgb(0, 255, 4);
+  fill-opacity: 0.4;
+}
+
+svg g.active .hexagon {
+  fill: Coral;
+  fill-opacity: 0.9;
+}
+
+svg g polygon {
+  stroke: #000000;
+  stroke-width: 0.2;
+  transition: fill-opacity 0.5s;
+}
+
+svg g text {
+  font-size: 0.17em;
+  fill: black;
+  fill-opacity: 0.7;
+  transition: fill-opacity 0.5s;
+}
+
+svg path {
+  fill: none;
+  stroke: #03090a;
+  stroke-width: 0.2em;
+  stroke-opacity: 0.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.hexagon-text {
+  font-size: 3px;
+  color : rgb(0, 0, 0);
+}
+
+.hexagon-text-invisible {
+  font-size: 10px;
+  opacity: 0;
+}
+

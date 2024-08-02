@@ -1,0 +1,32 @@
+.button-container {
+  display: flex;
+  gap: 5px; /* Espacio entre los botones */
+}
+
+.increment-button, .decrement-button {
+  background-color: #f0f0f0; /* Fondo sutil */
+  border: 1px solid #ccc; /* Borde sutil */
+  border-radius: 12px; /* Bordes redondeados */
+  padding: 5px 10px; /* Espaciado interno reducido */
+  font-size: 14px; /* Tamaño de la fuente reducido */
+  font-weight: bold; /* Fuente en negrita para claridad */
+  color: #333; /* Color del texto */
+  cursor: pointer; /* Cursor de puntero al pasar el ratón */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+  margin-right: 7px
+}
+
+.increment-button:hover {
+  background-color: #e0ffe0; /* Verde tenue al pasar el ratón */
+  transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+
+.decrement-button:hover {
+  background-color: #ffe0e0; /* Rojo tenue al pasar el ratón */
+  transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+
+.increment-button:active, .decrement-button:active {
+  background-color: #d0d0d0; /* Cambio de fondo al hacer clic */
+  transform: scale(0.95); /* Efecto de escala al hacer clic */
+}

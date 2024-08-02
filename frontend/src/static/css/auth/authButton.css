@@ -1,0 +1,81 @@
+.auth-button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: solid 2px var(--main-green-color);
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.auth-button:hover {
+  background-color: var(--main-green-color);
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.auth-button:active {
+  transform: translateY(-1px);
+}
+
+.blue {
+  border: solid 2px var(--main-blue-color) !important;
+}
+
+.blue:hover {
+  background-color: var(--main-blue-color) !important;
+  box-shadow: 0px 15px 20px rgba(46, 92, 229, 0.4);
+}
+
+.danger {
+  border: solid 2px var(--main-red-color) !important;
+}
+
+.danger:hover {
+  background-color: var(--main-red-color) !important;
+  box-shadow: 0px 15px 20px rgba(229, 46, 46, 0.4);
+}
+
+.auth-player {
+  margin-top: 8px;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Lakki Reddy';
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transform: translateY(0);
+}
+
+.auth-player:hover {
+  /* Cuando se pasa el cursor sobre el botón, se agrega una sombra */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  /* Cuando se pasa el cursor sobre el botón, se eleva un poco */
+  transform: translateY(-5px);
+}
+
+.set-width {
+  width: 190px;
+}
+
+.set-margin {
+  margin-top: 80px;
+  margin-bottom: -80px;
+}
+
+.set-margin2 {
+  margin-top: 25px;
+  margin-bottom: -20px;
+}

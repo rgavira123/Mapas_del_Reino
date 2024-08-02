@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@fontsource/lakki-reddy": "^5.0.18",
+    "react-hexgrid": "^2.0.1",
+    "react-modal": "^3.16.1"
+  }
+}
